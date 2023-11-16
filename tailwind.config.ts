@@ -7,8 +7,18 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#3490dc",
+        secondary: "#ffed4a",
+        // add more custom colors as needed
+      },
+      fontFamily: {
+        sans: ["Helvetica", "Arial", "sans-serif"],
+      },
+      // add more theme customization as needed
+    },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;
