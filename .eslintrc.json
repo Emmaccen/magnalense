@@ -1,3 +1,31 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": ["next/core-web-vitals", "prettier"], 
+	"rules": {
+		// "semi": ["error", "always"],
+		"quotes": ["error", "double"],
+		"indent": [
+			"error",
+			"tab",
+			{ "SwitchCase": 1, "VariableDeclarator": 1 }
+		],
+		"no-unused-vars": "warn",
+		"no-console": "warn",
+		"camelcase": ["error", { "properties": "always" }],
+		"no-var": "error",
+		"prefer-const": "error",
+		"no-trailing-spaces": "warn",
+		"eol-last": ["error", "always"],
+		"no-multiple-empty-lines": ["error", { "max": 1 }],
+		"keyword-spacing": ["error", { "before": true, "after": true }],
+		"arrow-spacing": ["error", { "before": true, "after": true }],
+		"no-confusing-arrow": ["error", { "allowParens": true }],
+		"prefer-arrow-callback": "error",
+		"prefer-template": "error",
+		"react/jsx-uses-react": "error",
+		"react/jsx-uses-vars": "error",
+		"react/jsx-filename-extension": [
+			"error",
+			{ "extensions": [".ts", ".tsx"] }
+		]
+	}
 }
