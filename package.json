@@ -10,10 +10,8 @@
 		"postinstall": "husky install"
 	},
 	"lint-staged": {
-		"*.{js,jsx,ts,tsx}": [
-			"eslint --fix",
-			"prettier --write",
-			"git add"
+		"**/*.{js,jsx,ts,tsx}": [
+			"yarn run lint"
 		]
 	},
 	"dependencies": {
