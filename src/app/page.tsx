@@ -1,3 +1,3 @@
 export default function Home() {
-  return <main>Magnalense</main>;
+	return <main>Magnalense</main>;
 }
