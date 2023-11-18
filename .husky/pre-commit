@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# run lint-staged on changed files
+yarn lint-staged
+# staging formatted files
+git add .
