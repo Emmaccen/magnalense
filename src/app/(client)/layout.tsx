@@ -1,11 +1,12 @@
-import { Provider } from '@/provider';
+'use client';
+import { RecoilRoot } from 'recoil';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			<Provider>
+			<RecoilRoot>
 				<body>{children}</body>
-			</Provider>
+			</RecoilRoot>
 		</html>
 	);
 }
