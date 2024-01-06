@@ -2,7 +2,7 @@ import { LinkTypeEnum } from '../enum';
 
 export type footerType = {
 	header?: footerStaticType;
-	children?: footerLinkType[];
+	children: footerLinkType[];
 };
 
 export type footerStaticType = {
